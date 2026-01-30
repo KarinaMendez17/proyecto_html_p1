@@ -1,5 +1,4 @@
-
-/* Componentes de Login Page */
+/* Componentes del Login */
 .main-container {
     height: 100vh;
     display: flex;
@@ -97,11 +96,11 @@
     display: flex;
     align-items: center;
     padding: 0 2rem 0rem 2rem;
-    position: relative; /* Importante para el logo absoluto */
+    position: relative;
     border-bottom: #a7a7a7 2px solid;
 }
 .navigation-bar {
-    width: 85%; /* Que ocupe todo el ancho */
+    width: 85%;
 }
 .navigation-links {
     list-style: none;
