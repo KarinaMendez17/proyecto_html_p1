@@ -1,0 +1,92 @@
+
+/* Componentes de Login Page */
+.main-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0 1rem;
+    background: url("../assets/imgs/pexels-pixabay-159400.png")no-repeat;
+    background-color: black;
+    background-size: cover;
+}
+.login-box {
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+    animation-delay: 3.5s;
+
+    background-color: #fff;
+    border-radius: 53px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    max-width: 80%;
+    padding:2% 6% ;
+
+    
+    color: grey;
+    & img{
+        width: 80px;
+        height: auto;
+    }
+    & figcaption{
+        margin-bottom: 1rem;
+        font-weight:lighter;
+        font-size: 1rem;
+        letter-spacing: 3px;
+    }
+    & h1{
+        margin-bottom: 1rem;
+        font-weight: 600;
+        text-align: center;
+        color: #000;
+    }
+    & p{
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    & h2{
+        font-weight: 100;
+    }
+    & footer{
+        margin-top: 1.5rem;
+        font-size: 0.7rem;
+        color: #aaa;
+    }
+}
+.login-box__form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+     & input {
+        margin-bottom: 1.5rem;
+        padding: 0.75rem;
+        border: 1px solid #ccc;
+        border-radius: 18px;
+        font-size: 1rem;
+        
+     }
+     & p{
+        text-align: left;
+        font-size: 1.2rem;
+        font-weight: 400;
+        color: grey;
+        margin-bottom: 0.2rem;
+        margin-left: 2%;
+     }
+}
+.login-box__button {
+    padding: 1.1rem 4rem;
+    border: none;
+    border-radius: 36px;
+    background-color: #ff721b;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;  
+}
