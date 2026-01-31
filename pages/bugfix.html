@@ -1,11 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reportar un Problema</title>
+
+  <!-- Tipografía moderna similar a la imagen -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/bugfix.css">
 </head>
 <body>
-    
+
+  <!-- Contenedor principal -->
+  <div class="report-card">
+
+    <!-- Header -->
+    <header class="card-header">
+      <div class="bug-icon">
+        <img src="../image/Icon material-bug-report.svg" alt="">
+      </div>
+      <div>
+        <h1>Reportar un Problema</h1>
+        <p>Ayúdanos a mejorar reportando cualquier error o sugerencia.</p>
+      </div>
+    </header>
+
+    <!-- Formulario -->
+    <form class="report-form">
+
+      <!-- Tipo de reporte -->
+      <div class="form-group">
+        <label>Tipo de Reporte</label>
+        <select>
+          <option>Error Técnico</option>
+          <option>Sugerencia</option>
+          <option>Otro</option>
+        </select>
+      </div>
+
+      <!-- Asunto -->
+      <div class="form-group">
+        <label>Asunto</label>
+        <input type="text" placeholder="Sugerencia sobre un problema..." />
+      </div>
+
+      <!-- Descripción -->
+      <div class="form-group">
+        <label>Descripción Detallada</label>
+        <textarea placeholder="Describe el problema o tu sugerencia..."></textarea>
+      </div>
+
+      <!-- Prioridad -->
+      <div class="form-group">
+        <label>Prioridad</label>
+        <div class="priority-options">
+          <button type="button" class="priority">Baja</button>
+          <button type="button" class="priority">Media</button>
+          <button type="button" class="priority active">Alta</button>
+        </div>
+      </div>
+
+      <!-- Captura -->
+      <div class="form-group">
+        <label>Captura Pantalla</label>
+        <div class="upload-box">
+          📄
+          <span>Arrastra y suelta aquí o haz clic para subir</span>
+        </div>
+      </div>
+
+    </form>
+
+    <!-- Acciones -->
+    <footer class="card-actions">
+      <button class="btn cancel">Cancelar</button>
+      <button class="btn submit">Enviar Reporte</button>
+    </footer>
+
+  </div>
+
 </body>
 </html>
