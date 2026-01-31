@@ -3,9 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Eliminar</title>
+    <link rel="stylesheet" href="../css/delete.css">
 </head>
 <body>
-    
+    <!-- Contenedor principal del modal de confirmación -->
+    <div class="container">
+        <!-- Sección de encabezado del modal -->
+        <div class="modal-header">
+
+            <!-- Contenedor del icono de basura -->
+            <div class="icon-trash">
+
+                <!-- Imagen del icono de basura -->
+                <img src="../image/trash.png" alt="Trash Icon">                
+            </div>
+
+            <!-- Título principal del modal -->
+            <h1 class="opc-title">Confirmar Eliminación</h1>    
+        </div>
+
+        <!-- Mensaje de advertencia al usuario -->
+        <!-- Explica la acción que está a punto de realizar y que no puede revertirse -->
+        <p class="mod-message">¿Estás seguro de que deseas eliminar el indicador seleccionado? Esta acción no puede deshacerse.</p>
+
+        <!-- Contenedor de botones de acción -->
+        <div class="opc-actions">
+
+            <!-- Botón para cancelar la acción y cerrar el modal -->
+            <button class="btn-cancel">Cancelar</button>
+
+            <!-- Botón para confirmar la eliminación -->
+            <button class="btn-delete">
+                <img src="../image/trash2.png" alt="Trash Icon">
+                Eliminar
+            </button>
+        </div>
+    </div>    
 </body>
 </html>
