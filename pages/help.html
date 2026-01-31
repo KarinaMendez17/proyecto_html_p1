@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,82 +7,95 @@
     <link rel="stylesheet" href="../css/help.css">
 </head>
 <body>
-    <!-- Contenedor principal del panel -->
-     <div class="help-modal">
-        
-        <!-- Encabezado con icono y título -->
-        <header class="help-header">
-            <div class="icon-circle">
-                <img src="../image/help.webp" alt="question-mark"> 
-            </div>
-            <div>
-                <h1>Centro de Ayuda</h1>
-                <p>Encuentra respuestas a tus preguntas o contáctanos.</p>
-            </div>
-                  
+    <!-- Contenedor principal del modal/panel -->
+    <div class="help-container">
+        <div class="help-cmodal">
+            
+            <!-- Encabezado con icono y título -->
+            <header class="help-header">
+                <div class="icon-circle">
+                    <span class="question-mark">?</span>
+                </div>
+                <div class="help-title">
+                    <h1>Centro de Ayuda</h1>
+                    <p>Encuentra respuestas a tus preguntas o contáctanos.</p>
+                </div>
+            </header>
+
             <!-- Contenido principal con dos columnas -->
             <div class="help-content">
                 
                 <!-- Columna izquierda: Temas Clave -->
                 <aside class="topics">
-                    <h3>Temas claves</h3>
-                    <ul>
-                        <li>
-                            <span class="topic-icon"><img src="" alt=""></span>
-                            Primeros Pasos
-                        </li>
-                        <li>
-                            <span class="topic-icon"><img src="" alt=""></span>
-                            Gestión de Imágenes
-                        </li>
-                        <li>
-                            <span class="topic-icon"><img src="" alt=""></span>
-                            Gestión de Indicadores
-                            <li>
-                            <span class="topic-icon"><img src="" alt=""></span>
-                            Reportes y Análisis
-                        </li>
-                        <li>
-                            <span class="topic-icon"><img src="" alt=""></span>
-                            Configuracion y Cuenta
-                        </li>
-                        <li>
-                            <span class="topic-icon"><img src="" alt=""></span>
-                            Solución & Problemas
-                        </li>
-                        </li>
-                    </ul>
+                    <h2>Temas Clave</h2>
+                    <nav class="topics-list">
+                        <a href="#" class="topic-item">
+                            <img src="../image/PP-removebg-preview.png" alt="Primeros Pasos" class="topic-icon">
+                            <span>Primeros Pasos</span>
+                        </a>
+                        
+                        <a href="#" class="topic-item">
+                            <img src="../image/GM.png" alt="Gestión de Imágenes" class="topic-icon">
+                            <span>Gestión de Imágenes</span>
+                        </a>
+                        
+                        <a href="#" class="topic-item active">
+                            <img src="../image/GI.jpg" alt="Gestión de Indicadores" class="topic-icon">
+                            <span>Gestión de Indicadores</span>
+                        </a>
+                        
+                        <a href="#" class="topic-item">
+                            <img src="../image/RA.png" alt="Reportes y Análisis" class="topic-icon">
+                            <span>Reportes y Análisis</span>
+                        </a>
+                        
+                        <a href="#" class="topic-item">
+                            <img src="../image/CC.png" alt="Configuración y Cuenta" class="topic-icon">
+                            <span>Configuración y Cuenta</span>
+                        </a>
+                        
+                        <a href="#" class="topic-item">
+                            <img src="../image/SP.png" alt="Solución i Problemas" class="topic-icon">
+                            <span>Solución i Problemas</span>
+                        </a>
+                    </nav>
                 </aside>
 
                 <!-- Columna derecha: Primeras Preguntas -->
-                <main class="question-main">
-                <h2>Primeras Preguntas</h2>
-                <div class="question-list">
-                    <a href="#" class="question-item">
-                        ¿Cómo añadir un nuevo indicador?
-                    </a>
-                    <a href="#" class="question-item">
-                        ¿Qué tipo de nuevo indicador puedo elegir?
-                    </a>
-                    <a href="#" class="question-item">
-                        ¿Qué significa el nivel de cumplimiento?
-                    </a>
-                    <a href="#" class="question-item">
-                        ¿Sólo el administrador puede ver los informes?
-                    </a>
-                </div>
+                <main class="questions-main">
+                    <h2>Primeras Preguntas</h2>
+                    <div class="questions-list">
+                        <a href="#" class="question-item">
+                            ¿Cómo añado un nuevo indicador?
+                        </a>
+                        <a href="#" class="question-item">
+                            ¿Qué tipo de nuevo indicador puedo elegir?
+                        </a>
+                        <a href="#" class="question-item">
+                            ¿Qué significa el nivel de cumplimiento?
+                        </a>
+                        <a href="#" class="question-item">
+                            ¿Sólo el administrador puede ver los informes?
+                        </a>
+                    </div>
                 </main>
+                
             </div>
 
-                <!-- Barra de búsqueda inferior -->
-                 <footer class="help-footer">
-                    <div class="search-container">
-                        <img src="" alt="">
-                        <input type="text" placeholder="Busca tu pregunta..." class="search-input">
-                    </div>
-                    <button class="close-button">Cerrar</button>
-                 </footer>
+            <!-- Barra de búsqueda inferior -->
+            <footer class="help-footer">
+                <div class="search-container">
+                    <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                    <input type="text" placeholder="Busca tu pregunta..." class="search-input">
+                </div>
+                <button class="close-button">Cerrar</button>
+            </footer>
+
         </div>
-     </div>    
+    </div>
+
 </body>
 </html>
