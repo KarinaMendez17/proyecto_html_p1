@@ -4,24 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio | KARIO Media</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/components.css">
 </head>
 <body>
-    <main class=>
-        <div>
-            <img src="">
+    <main class="main-container">
+        <!--
+        -->
+        <div class="splash-screen">
+            <img src="./assets/imgs/kario sin kairo.svg" alt="KARIO Media Logo" class="logo">
         </div>
-        <h1>Bienvenido al panel digital de KARIO Media</h1>
-        <p>Por favor ingresa los siguientes datos para ingresar a la plataforma</p>
+        <section class="login-box">
+            <img src="./assets/imgs/kario sin kairo.svg" alt="KARIO Media Logo">
+            <figcaption>MEDIA</figcaption>
+            <h1>Bienvenido al panel digital de KARIO Media</h1>
+            <p>Por favor ingresa los siguientes datos para ingresar a la plataforma</p>
 
-        <form>
-            <h2>Usuario</h2>
-            <input class="usuario" placeholder="Username">
-            <h2>Contraseña</h2>
-            <input class="password" placeholder="password">
-        </form>
-        <button><a href="./pages/dashboard.html">Ingresar al panel</a></button>
-        <footer>¿Tienes problemas para ingresar? Por favor contactarse con <a href="./pages/bugfix.html">asistencia técnica</a> lo más pronto posible.</footer>
+            <form class="login-box__form">
+                <p>Usuario</p>
+                <input class="usuario" required>
+                <p>Contraseña</p>
+                <input class="password" type="password" required>
+            </form>
+            <a href="./pages/dashboard.html"><button class="login-box__button" type="submit">Ingresar al panel</button></a>
+            <footer>¿Tienes problemas para ingresar? Por favor contactarse con <a href="./pages/bugfix.html">asistencia técnica</a> lo más pronto posible.</footer>
+        </section>
+        
+        <section class="success">
+            <img src="./assets/imgs/kario sin kairo.svg" alt="KARIO Media Logo">
+            <figcaption>MEDIA</figcaption>
+            <p>Bienvenido de Nuevo</p>
+            <img src="./assets/imgs/pp@2x.png">
+            <p>Pedro Felipe Gómez Bonilla</p>
+            <footer>Usuario Administrador</footer>
+        </section>
     </main>
-    
 </body>
 </html>

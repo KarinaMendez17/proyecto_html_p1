@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Añadir | KARIO Media</title>
+</head>
+<body>
+    <main>
+        <div class="add-form">
+            <img src="a">
+            <div>
+                <p>Nuevo Indicador</p>
+                <p>Completa los campos para añadir un nuevo indicador a tu panel</p>
+            </div>
+            <form>
+                <div>
+                    <label for="name" class="form-label">Nombre del Indicador</label>
+                    <input type="text" id="name" name="name" class="form-input" placeholder="Nombre del Indicador" required/>
+                </div>
+
+                <div>
+                    <label for="description" class="form-label">Descripción</label>
+                    <textarea type="text" id="description" name="description" class="form-input" placeholder="Ingrese una breve descripción del nuevo indicador"></textarea>
+                </div>
+
+                <div>
+                    <label for="formula" class="form-label">Fórmula</label>
+                    <select id="formula" name="formula" class="form-select" required>
+                        <option value="">Selecciona una Fórmula</option>
+                        <option value="metagil">Met.Ágil</option>
+                        <option value="metexpo">Met.Expo</option>
+                        <option value="metfibo">Met.Fibo</option>
+                        <option value="na">N/A</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="frecuencia" class="form-label">Frecuencia</label>
+                    <select id="frecuencia" name="frecuencia" class="form-select" required>
+                        <option value="">Selecciona una Frecuencia</option>
+                        <option value="1/2">1/2</option>
+                        <option value="1/3">1/3</option>
+                        <option value="1/4">1/4</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="area" class="form-label">Área</label>
+                    <input type="text" id="area" name="area" class="form-input" placeholder="Ingrese el Área" required/>
+                </div>
+
+            </form>
+        </div>
+    </main>
+    
+</body>
+</html>

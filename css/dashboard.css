@@ -1,0 +1,148 @@
+.Dashboard-main-container {
+    width: 100vmax;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+        font-weight: 500;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    p {
+        font-size: larger;
+        margin-bottom: 3rem;
+    }
+
+}
+.table-container{
+    justify-items: center;
+}
+.Dashboard-table {
+    table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 0 15px;
+    width: 70%;
+
+    th:nth-child(1){width: 10%;}
+    th:nth-child(2){width: 15%;}
+    th:nth-child(3){width: 8%;}
+    th:nth-child(4){width: 13%;}
+    th:nth-child(5){width: 18%;}
+    th:nth-child(6){width: 10%;}
+    th:nth-child(7){width:10%;}
+    th:nth-child(8){width: 10%;}
+    th:nth-child(9){width: 10%;}
+    th:nth-child(10){width: 5%;}
+
+    
+
+    td {
+        text-align: center;
+        vertical-align: middle;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        
+        padding: 1.2rem 0.5rem;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+
+        &:first-child {
+            border-left: 1px solid #ccc;
+            border-radius: 40px 0 0 40px;
+        }
+
+        &:nth-child(9) {
+            border-right: 1px solid #ccc;
+            border-radius: 0 40px 40px 0;
+        }
+
+        &.col-menu-hamburguesa {
+            background-color: transparent;
+            border: none;
+            width: 50px;
+            padding-left: 15px;
+            vertical-align: middle;
+        }
+    }
+}
+
+.hamburguesa-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+
+    span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: #333;
+        border-radius: 2px;
+    }
+}
+
+.circle {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    --p: 75;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background: conic-gradient(var(--color) calc(var(--p) * 1%), transparent 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.circle[style*="--p:0"],
+.circle[style*="--p:1"],
+.circle[style*="--p:2"],
+.circle[style*="--p:3"] {
+    --color: red;
+}
+
+.circle[style*="--p:4"],
+.circle[style*="--p:5"],
+.circle[style*="--p:6"],
+.circle[style*="--p:7"] {
+    --color: gold;
+}
+
+.circle[style*="--p:8"],
+.circle[style*="--p:9"] {
+    --color: green;
+}
+
+.circle::before {
+    content: "";
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+}
+
+.circle span {
+    position: relative;
+    color: rgb(0, 0, 0);
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+button {
+    border-radius: 0.375rem;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 0.6rem 1.2rem;
+    background-color: rgb(255, 114, 27);
+    color: #ffff;
+    margin-bottom: 2rem;
+}
+
+.btn-editar:hover {
+    background-color: #1d1d1d;
+}
