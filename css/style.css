@@ -3,58 +3,61 @@
     height: 6rem;
     display: flex;
     align-items: center;
-    padding: 0 2rem 0rem 2rem;
+    padding: 0 2rem;
     position: relative;
-    border-bottom: #a7a7a7 2px solid;
+    border-bottom: 2px solid #a7a7a7;
 }
+
 .navigation-bar {
     width: 85%;
 }
+
 .navigation-links {
     list-style: none;
     display: flex;
+    gap: 1.25rem;
+    justify-content: space-around;
     align-items: center;
-    justify-content: space-evenly;
     padding: 0;
     margin: 0;
-
-    li {
-        font-size: 1rem;
-        display: flex;
-        align-items: center;
-        
-        a {
-            color:#1d1d1d;
-            font-weight: 500;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-        }
-        span {
-            margin-left: 0.5rem;
-        }
-        img {
-            width: 18px;
-            height: auto;
-        }
-        
-        &.logo-container {
-            .Kario-media-logo-dashboard {
-                width: 48px;
-                height: auto;
-            }
-        }
-    }
 }
+
+.navigation-links li {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.navigation-links li a {
+    color: #1d1d1d;
+    font-weight: 500;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.navigation-links li span {
+    margin-left: 0.5rem;
+}
+
+.navigation-links li img {
+    width: 18px;
+    height: auto;
+}
+
+.navigation-links li.logo-container img {
+    width: 48px;
+}
+
 .header-icons-dashboard {
     margin-left: auto;
     display: flex;
     gap: 1.5rem;
     z-index: 10;
-    
-    img {
-        cursor: pointer;
-    }
+}
+
+.header-icons-dashboard img {
+    cursor: pointer;
 }
 
 .site-footer {
@@ -91,16 +94,51 @@
     opacity: 0.85;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 600px) {
+
+    .header-dashboard {
+        justify-content: center;
+        margin-top: 1rem;
+        flex-wrap: wrap;
+        height: auto;
+        gap: 1rem;
+    }
+
+    .navigation-bar {
+        width: 100%;
+    }
+
+    .navigation-links {
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+    }
+
+    .navigation-links li span {
+        display: none;
+    }
+
+    .navigation-links li a {
+        justify-content: space-around;
+    }
+
+    .header-icons-dashboard {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .logo-container {
+        order: -1;
+    }
+
     .site-footer {
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        text-align: left;
+        text-align: center;
     }
 
     .footer-p,
     .footer-legal {
-        text-align: left;
+        text-align: center;
     }
 }
+
+
