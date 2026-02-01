@@ -1,0 +1,192 @@
+.header-add {
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    padding: 0 2rem 0rem 2rem;
+    position: relative;
+    border-bottom: #a7a7a7 2px solid;
+}
+.navigation-bar {
+    grid-column: 1;
+    width: 85%;
+}
+.navigation-links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5rem;
+    list-style: none;
+    margin: 0;
+
+    li {
+        font-size: 1rem;
+        
+        a {
+            color:#1d1d1d;
+            font-weight: 500;
+            text-decoration: none;
+        }
+        span {
+            margin-left: 0.5rem;
+        }
+        img {
+            width: 18px;
+            height: auto;
+        }
+        
+        .logo-container {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 48px;
+            height: auto;
+        }
+    }
+}
+.header-icons {
+    margin-left: auto;
+    display: flex;
+    gap: 1.5rem;
+    z-index: 10;
+    
+    img {
+        cursor: pointer;
+    }
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 3rem 1rem;
+}
+
+.form-imagen {
+    height: 3rem;
+    width: 3rem;
+}
+
+.form-title {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.add-form {
+    width: 100%;
+    max-width: 40rem;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.add-form > div:first-of-type p:first-child {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.add-form > div:first-of-type p:last-child {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0.25rem 0 0;
+}
+
+.add-form form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+}
+
+.form-label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    display: block;
+    color: #1d1d1d;
+}
+
+.form-input,
+.form-select,
+textarea {
+    width: 100%;
+    padding: 0.6rem 0.75rem;
+    font-size: 0.9rem;
+    border-radius: 0.375rem;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 6rem;
+}
+
+.acciones button {
+    padding: 0.6rem 1.2rem;
+    border-radius: 0.375rem;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.acciones {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.btn-editar {
+    background-color: rgb(255, 114, 27);
+    color: #ffff;
+}
+
+.btn-editar:hover {
+    background-color: #1d1d1d;
+}
+
+.btn-cancelar {
+    background-color: transparent;
+    color: rgb(255, 114, 27);
+    border: 0.063rem solid rgb(255, 114, 27);
+}
+
+.btn-cancelar:hover {
+    background-color: rgb(255, 114, 27);
+    color: #ffff;
+}
+
+.form-input:focus,
+.form-select:focus,
+textarea:focus {
+    border-color: rgb(255, 114, 27);
+    box-shadow: 0 0 0 2px rgba(255, 114, 27, 0.2);
+}
+
+@media (max-width: 600px) {
+    .add-form {
+        padding: 1.5rem;
+    }
+
+    .navigation-links {
+        grid-template-columns: auto 1fr;
+    }
+
+    .navigation-links li span {
+        display: none;
+    }
+
+    .navigation-bar {
+        display: grid;
+        grid-template-columns: 2rem auto;
+    }
+
+    .acciones {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
