@@ -161,6 +161,11 @@
     font-weight: 600;
 }
 
+.acciones-perfil button a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .btn-editar {
     background-color: rgb(255, 114, 27);
     color: #ffff;
