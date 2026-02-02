@@ -1,3 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 .Dashboard-main-container {
     width: 100%;
     display: flex;
@@ -55,8 +62,8 @@
     overflow: hidden;
     text-overflow: ellipsis;
     padding: 1.2rem 0.5rem;
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #cccc;
+    border-bottom: 1px solid #cccc;
 }
 
 .Dashboard-table td:first-child {
