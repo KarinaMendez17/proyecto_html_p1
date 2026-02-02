@@ -1,0 +1,13 @@
+.Dashboard-table td.col-menu-delete {
+    border: none;
+    width: 50px;
+    padding-left: 15px;
+}
+
+.Delete-icon {
+    width: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+}

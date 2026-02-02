@@ -1,11 +1,199 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dashboard | KARIO Media</title>
+    <link rel="stylesheet" href="../css/delete.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    
-</body>
+    <header class="header-dashboard">
+        <nav class="navigation-bar">
+            <ul class="navigation-links">
+                <li><a href="./add.html"><img src="../assets/imgs/Group3.svg"><span>Añadir</span></a></li>
+                <li><a href="./dashboard.html"><img src="../assets/imgs/Icon-open-reload.svg" alt="reload-svg"><span>Refrescar</span></a></li>
+                <li><a href="./delete.html"><img src="../assets/imgs/Icon-material-delete-forever.svg" alt="delete-forever"><span>Eliminar</span></a></li>
+                
+                <li class="logo-container">
+                    <a href="./dashboard.html"><img class="Kario-media-logo-dashboard" src="../assets/imgs/kario-sin-kairo.svg"></a>
+                </li>
+                
+                <li><a href="./bugfix.html"><img src="../assets/imgs/Icon-material-bug-report.svg" alt="bug-report"><span>Reportar</span></a></li>
+                <li><a href="./help.html"><img src="../assets/imgs/icons8-help-48.png" alt="help"><span>Ayuda</span></a></li>
+            </ul>
+        </nav>
+
+        <div class="header-icons-dashboard">
+            <img src="../assets/imgs/Icon-ionic-ios-settings.svg" alt="settings">
+            <img src="../assets/imgs/Icon-material-notifications-active.svg" alt="notifications">
+            <a href="./profile.html"><img src="../assets/imgs/pp.png"></a>
+        </div>
+    </header>
+    <main class="Dashboard-main-container">
+        <h1>Panel de Inidicadores</h1>
+        <p>Aquí puedes visualizar los indicadores propuestos y añadidos por tu equipo de trabajo</p>
+        <div class="table-container">
+            <table class="Dashboard-table">
+                <thead>
+                    <tr>
+                        <th>Indicador</th>
+                        <th>Descripción</th>
+                        <th>Categoria</th>
+                        <th>Fecha de inicio</th>
+                        <th>Fecha de terminación</th>
+                        <th>Fórmula</th>
+                        <th>Frecuencia</th>
+                        <th>Cumplimiento</th>
+                        <th>Área</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="body-row">
+                        <td>Modelado 3D</td>
+                        <td>Creación de modelos 3D detallados y optimizados para videojuegos, animación, visualización de productos y entornos digitales, cuidando proporciones, topología y acabados.</td>
+                        <td>Baja</td>
+                        <td>12/05/2021</td>
+                        <td>12/12/2021</td>
+                        <td>Met.Ágil</td>
+                        <td>1/4</td>
+                        <td>
+                            <div class="circle" style="--p:31">
+                                <span>31%</span>
+                            </div>
+                        </td>
+                        <td>Marketing</td>
+                        <td class="col-menu-delete">
+                            
+                            <div class="Delete-icon">
+                                <img src="../assets/imgs/icons8-cancel.svg" alt="delete">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="body-row">
+                        <td>Finca Galeón</td>
+                        <td>Proyecto de identidad y diseño visual para Finca Galeón, enfocado en resaltar su carácter, entorno y propuesta estética.</td>
+                        <td>Baja</td>
+                        <td>12/04/2021</td>
+                        <td>12/05/2021</td>
+                        <td>Met.Ágil</td>
+                        <td>1/4</td>
+                        <td>
+                            <div class="circle" style="--p:25">
+                                <span>25%</span>
+                            </div>
+                        </td>
+                        <td>Diseño</td>
+                        <td class="col-menu-delete">
+                            
+                            <div class="Delete-icon">
+                                <img src="../assets/imgs/icons8-cancel.svg" alt="delete">
+                                
+                                
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="body-row">
+                        <td>Colegios Privados</td>
+                        <td>Desarrollo de proyectos de diseño y comunicación visual para colegios privados, enfocados en identidad, claridad informativa y presentación institucional.</td>
+                        <td>Media</td>
+                        <td>24/04/2021</td>
+                        <td>12/11/2021</td>
+                        <td>Met.Fibo</td>
+                        <td>1/4</td>
+                        <td>
+                            <div class="circle" style="--p:80">
+                                <span>80%</span>
+                            </div>
+                        </td>
+                        <td>Developers</td>
+                        <td class="col-menu-delete">
+                            
+                            <div class="Delete-icon">
+                                <img src="../assets/imgs/icons8-cancel.svg" alt="delete">
+                                
+                                
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="body-row">
+                        <td>Electrodomésticos</td>
+                        <td>Desarrollo de diseño y comunicación visual para electrodomésticos, enfocado en funcionalidad, estética y presentación del producto.</td>
+                        <td>Media</td>
+                        <td>12/04/2021</td>
+                        <td>12/09/2016</td>
+                        <td>N/A</td>
+                        <td>1/4</td>
+                        <td>
+                            <div class="circle" style="--p:32">
+                                <span>32%</span>
+                            </div>
+                        </td>
+                        <td>Gerencia</td>
+                        <td class="col-menu-delete">
+                            
+                            <div class="Delete-icon">
+                                <img src="../assets/imgs/icons8-cancel.svg" alt="delete">
+                                
+                                
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="body-row">
+                        <td>Estrato 2 - Floridablanca</td>
+                        <td>Diseño visual orientado a un entorno residencial de estrato 2 en Floridablanca, adaptado a sus necesidades y contexto.</td>
+                        <td>Alta</td>
+                        <td>12/04/2021</td>
+                        <td>12/09/2021</td>
+                        <td>Met.Expo</td>
+                        <td>1/4</td>
+                        <td>
+                            <div class="circle" style="--p:95">
+                                <span>95%</span>
+                            </div>
+                        </td>
+                        <td>Marketing</td>
+                        <td class="col-menu-delete">
+                            
+                            <div class="Delete-icon">
+                                <img src="../assets/imgs/icons8-cancel.svg" alt="delete">
+                                
+                                
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="body-row">
+                        <td>Jóvenes en Acción</td>
+                        <td>Desarrollo de proyectos de diseño y comunicación visual para Jóvenes en Acción, enfocados en informar, orientar y fortalecer su impacto social.</td>
+                        <td>Alta</td>
+                        <td>15/02/2021</td>
+                        <td>09/11/2021</td>
+                        <td>Met.Expo</td>
+                        <td>1/4</td>
+                        <td>
+                            <div class="circle" style="--p:75">
+                                <span>75%</span>
+                            </div>
+                        </td>
+                        <td>Producción</td>
+                        <td class="col-menu-delete">
+                            
+                            <div class="Delete-icon">
+                                <img src="../assets/imgs/icons8-cancel.svg" alt="delete">
+                                
+                                
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <a href="./dashboard.html"><button class="btn-editar">Cancelar</button></a>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-p"><p>KARIO Media © 2026 | Contacto: <a href="mailto:info@kariomedia.com">info@kariomedia.com</a> | Desarrollado con 🤍 por: <a href="https://github.com/Dana-villa" target="_blank">Dana Villamizar</a>, <a href="https://github.com/karinamendez17" target="_blank">Karina Mendez</a> y <a href="https://github.com/Shiroses" target="_blank">Santiago Domínguez</a></p></div>
+      <div class="footer-legal"><a href="#" class="footer-link">Términos y Condiciones</a> | <a href="#" class="footer-link">Política de Privacidad</a> | <a href="#" class="footer-link">Aviso Legal</a></div>
+    </footer>
 </html>
