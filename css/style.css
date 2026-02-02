@@ -1,0 +1,142 @@
+.header-dashboard {
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+    position: relative;
+    border-bottom: 2px solid #a7a7a7;
+}
+
+.navigation-bar {
+    width: 85%;
+}
+
+.navigation-links {
+    list-style: none;
+    display: flex;
+    gap: 1.25rem;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation-links li {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.navigation-links li a {
+    color: #1d1d1d;
+    font-weight: 500;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.navigation-links li span {
+    margin-left: 0.5rem;
+}
+
+.navigation-links li img {
+    width: 18px;
+    height: auto;
+}
+
+.navigation-links li.logo-container img {
+    width: 48px;
+}
+
+.header-icons-dashboard {
+    margin-left: auto;
+    display: flex;
+    gap: 1.5rem;
+    z-index: 10;
+}
+
+.header-icons-dashboard img {
+    cursor: pointer;
+}
+
+.site-footer {
+    width: 100%;
+    background-color: rgb(255, 114, 27);
+    border-top: 2px solid #a7a7a7;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 0.75rem;
+    color: #1d1d1d;
+}
+
+.site-footer a {
+    color: #ffff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.site-footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-p {
+    color: #ffff;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.footer-legal {
+    color: #ffff;
+    text-align: center;
+    opacity: 0.85;
+}
+
+@media (max-width: 600px) {
+
+    .header-dashboard {
+        justify-content: center;
+        margin-top: 1rem;
+        flex-wrap: wrap;
+        height: auto;
+        gap: 1rem;
+    }
+
+    .navigation-bar {
+        width: 100%;
+    }
+
+    .navigation-links {
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+    }
+
+    .navigation-links li span {
+        display: none;
+    }
+
+    .navigation-links li a {
+        justify-content: space-around;
+    }
+
+    .header-icons-dashboard {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .logo-container {
+        order: -1;
+    }
+
+    .site-footer {
+        text-align: center;
+    }
+
+    .footer-p,
+    .footer-legal {
+        text-align: center;
+    }
+}
