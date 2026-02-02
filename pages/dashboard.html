@@ -3,62 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard | KARIO Media</title><!-- 
+    <title>Dashboard | KARIO Media</title>
     <link rel="stylesheet" href="../css/components.css">
-    <link rel="stylesheet" href="../css/main.css"> -->
-    <link rel="stylesheet" href="../css/test.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <input type="checkbox" id="menu-toggle" class="menu-checkbox">
-    <div>
-        <label for="menu-toggle" class="menu-btn">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
+    <header class="header-dashboard">
+        <nav class="navigation-bar">
+            <ul class="navigation-links">
+                <li><a href="./add.html"><img src="../assets/imgs/Group 3.svg"><span>Añadir</span></a></li>
+                <li><a href="./dashboard.html"><img src="../assets/imgs/Icon open-reload.svg" alt="reload-svg"><span>Refrescar</span></a></li>
+                <li><a href="./delete.html"><img src="../assets/imgs/Icon material-delete-forever.svg" alt="delete-forever"><span>Eliminar</span></a></li>
+                
+                <li class="logo-container">
+                    <a href="./dashboard.html"><img class="Kario-media-logo-dashboard" src="../assets/imgs/kario sin kairo.svg"></a>
+                </li>
+                
+                <li><a href="./bugfix.html"><img src="../assets/imgs/Icon material-bug-report.svg" alt="bug-report"><span>Reportar</span></a></li>
+                <li><a href="./help.html"><img src="../assets/imgs/icons8-help-48.png" alt="help"><span>Ayuda</span></a></li>
+            </ul>
+        </nav>
 
-        <div class="logo-header">
-            <img src="../assets/imgs/kario sin kairo.svg" alt="">
+        <div class="header-icons-dashboard">
+            <img src="../assets/imgs/Icon ionic-ios-settings.svg" alt="settings">
+            <img src="../assets/imgs/Icon material-notifications-active.svg" alt="notifications">
+            <a href="./profile.html"><img src="../assets/imgs/pp.png"></a>
         </div>
-    </div>
-    
-
-    
-    
-    <nav class="navbar">
-        <div class="navbar_left">
-            <div class="navbar_item">
-                <img src="../assets/imgs/Icon material-delete-forever.svg" alt="">
-                <a href="#">Añadir</a>
-            </div> 
-            <div class="navbar_item">
-                <img src="../assets/imgs/Icon material-delete-forever.svg" alt="">
-                <a href="#">Añadir</a>
-            </div> 
-            <div class="navbar_item">
-                <img src="../assets/imgs/Icon material-delete-forever.svg" alt="">
-                <a href="#">Añadir</a>
-            </div> 
-        </div>
-        
-        <div class="navbar_right">
-            <div class="navbar_item">
-                <img src="../assets/imgs/Icon material-delete-forever.svg" alt="">
-                <a href="#">Añadir</a>
-            </div> 
-            <div class="navbar_item">
-                <img src="../assets/imgs/Icon material-delete-forever.svg" alt="">
-                <a href="#">Añadir</a>
-            </div>     
-        </div>
-        <div class="navbar_config">
-            <a href="#">Reportar</a>
-            <a href="#">Ayuda</a>
-            <a href="#">Ayuda</a>    
-
-        </div>
-        
-    </nav>
+    </header>
     <main class="Dashboard-main-container">
         <h1>Panel de Inidicadores</h1>
         <p>Aquí puedes visualizar los indicadores propuestos y añadidos por tu equipo de trabajo</p>
