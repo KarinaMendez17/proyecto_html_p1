@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
@@ -6,34 +6,206 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-html {
-    scroll-behavior: smooth;
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: grey;
+
+    background: url("../assets/imgs/pexels-pixabay-159400.png") black no-repeat;
+    background-size: cover;
+    background-position: 50%;
+
+}
+h1 {
+    font-weight: normal;
+    color: black;
+}
+h2 {
+    font-weight: 500;
+    color: black;
 }
 
-/* Pantalla de carga (Splash) */
-.splash-screen {
-    position: fixed;
-    width: 100%;
+
+.main-container {
     height: 100vh;
+
+    position: relative;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 100;
-    animation: fadeOutContainer 0.5s forwards;
-    animation-delay: 3s; 
-}
-.logo {
-    width: 150px;
-    opacity: 0;
-    animation: fadeInOut 2.5s ease-in-out forwards;
+
+    overflow: hidden;
 }
 
-/* --- KEYFRAMES --- */
+.splash-screen__entry {
+    position: absolute;
+
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: -1;
+
+    animation: fadeOutContainer 0.5s forwards;
+    animation-delay: 1.5s; 
+}
+
+.login-box {
+    position: absolute;
+    box-sizing: border-box;
+
+
+    opacity: 0;
+    visibility: hidden;
+    animation: fadeInOut 4s ease-in-out forwards;
+    animation-delay: 2s;
+
+    height: auto;
+    width: 35vmax;
+
+    background-color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 30px 100px;
+    gap: 30px;
+    border-radius: 48px;
+
+
+
+    .login-box__form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: left;
+        label{
+            margin-left: 10px;
+        }
+        .login-box__input {
+            border: grey 1px solid;
+            border-radius: 12px;
+            padding: 10px 10px;
+            margin-bottom: 15px;
+            margin-top: 5px;
+        }
+    }
+
+    .login-box__button {
+        padding: 20px 60px;
+
+        background-color: #ff721b;
+        border: none;
+        border-radius: 48px;
+
+        color: #fff;
+        font-size: 18px;
+        cursor: pointer;
+
+        &:active {
+            background-color: #df5f10;
+        }
+    }
+
+    footer {
+        font-size:x-small;
+    }
+}
+.logo-container {
+    .logo-container__logo {
+        width: 80px;
+        min-height: 40px;
+    }
+    .logo-container__caption {
+        letter-spacing: 3px;
+    }
+}
+
+.success {
+    box-sizing: border-box;
+    position: absolute;
+
+    opacity: 0;
+    visibility: hidden;
+    animation: fadeInOut 4s ease-in-out forwards;
+    animation-delay: 5.3s;
+
+    height: auto;
+    width: 35vmax;
+
+    background-color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 40px 100px;
+    gap: 30px;
+    border-radius: 48px;
+
+    footer{
+        font-size: small;
+    }
+}
+
+.splash-screen__exit {
+    position: absolute;
+
+    width: 100%;
+    height: 100vh;
+
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: -1;
+
+    animation: fadeInOut 4s ease-in-out forwards;
+    animation-delay: 9.3s; 
+}
+
+@media (max-width:1500px) {
+    .login-box, .success {
+        width: 45vmax;
+        padding: 30px 80px;
+    }
+}
+
+@media (max-width:1200px) {
+    .login-box, .success {
+        width: 60vmax;
+        padding: 30px 80px;
+    }
+}
+
+@media (max-width:800px) {
+    .login-box , .success {
+        width: 60vmax;
+
+        padding: 30px 60px;
+    }
+}
+
+@media (max-width:600px) {
+    .login-box, .success {
+        width: 100%;
+        
+        padding: 30px 30px;
+        border-radius: 0;
+    }
+}
+
 @keyframes fadeInOut {
-    0% { opacity: 0; transform: scale(0.9); }
-    40% { opacity: 1; transform: scale(1); }
-    80% { opacity: 1; transform: scale(1); }
-    100% { opacity: 0; transform: scale(1.1); }
+    0% { opacity: 0; visibility: hidden;}
+    20% { opacity: 1; visibility: visible;}
+    80% { opacity: 1;}
+    100% { opacity: 0; visibility: hidden;}
 }
 @keyframes fadeOutContainer {
     to { 
@@ -41,35 +213,4 @@ html {
         visibility: hidden; 
         pointer-events: none; 
     }
-}
-@keyframes fadeIn {
-    to { opacity: 1; }
-}
-
-/*Tablet*/
-@media (max-width: 64rem) { /* 1024px */
-  .clearfix {
-    grid-template-columns: 1fr;
-  }
-  .navbar {
-    flex-direction: column;
-    gap: 0.625rem; /* 10px */
-  }
-  .logo {
-    text-align: center;
-  }
-}
-
-/*Mobile*/
-@media (max-width: 48rem) { /* 768px */
-  .clearfix {
-    grid-template-columns: 1fr;
-  }
-  .navbar {
-    flex-direction: column;
-    gap: 0.625rem;
-  }
-  .logo {
-    text-align: center;
-  }
 }
