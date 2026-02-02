@@ -1,22 +1,35 @@
 .Dashboard-main-container {
-    width: 100vmax;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    h1 {
-        font-weight: 500;
-        margin-top: 2rem;
-        margin-bottom: 1rem;
-    }
-    p {
-        font-size: larger;
-        margin-bottom: 3rem;
-    }
+}
 
+.Dashboard-main-container h1 {
+    font-weight: 500;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
 }
-.table-container{
-    justify-items: center;
+
+.Dashboard-main-container p {
+    font-size: larger;
+    margin-bottom: 3rem;
 }
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.Dashboard-table {
+    margin: auto;
+    table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 0 15px;
+    width: 70%;
+    min-width: 900px;
+}
+
 .Dashboard-table {
     table-layout: fixed;
     border-collapse: separate;
@@ -33,38 +46,34 @@
     th:nth-child(8){width: 10%;}
     th:nth-child(9){width: 10%;}
     th:nth-child(10){width: 5%;}
+}
 
-    
+.Dashboard-table td {
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 1.2rem 0.5rem;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
 
-    td {
-        text-align: center;
-        vertical-align: middle;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        
-        padding: 1.2rem 0.5rem;
-        border-top: 1px solid #ccc;
-        border-bottom: 1px solid #ccc;
+.Dashboard-table td:first-child {
+    border-left: 1px solid #ccc;
+    border-radius: 40px 0 0 40px;
+}
 
-        &:first-child {
-            border-left: 1px solid #ccc;
-            border-radius: 40px 0 0 40px;
-        }
+.Dashboard-table td:nth-child(9) {
+    border-right: 1px solid #ccc;
+    border-radius: 0 40px 40px 0;
+}
 
-        &:nth-child(9) {
-            border-right: 1px solid #ccc;
-            border-radius: 0 40px 40px 0;
-        }
-
-        &.col-menu-hamburguesa {
-            background-color: transparent;
-            border: none;
-            width: 50px;
-            padding-left: 15px;
-            vertical-align: middle;
-        }
-    }
+.Dashboard-table td.col-menu-hamburguesa {
+    background-color: transparent;
+    border: none;
+    width: 50px;
+    padding-left: 15px;
 }
 
 .hamburguesa-icon {
@@ -72,14 +81,14 @@
     flex-direction: column;
     gap: 4px;
     cursor: pointer;
+}
 
-    span {
-        display: block;
-        width: 25px;
-        height: 3px;
-        background-color: #333;
-        border-radius: 2px;
-    }
+.hamburguesa-icon span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    border-radius: 2px;
 }
 
 .circle {
