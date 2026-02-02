@@ -214,3 +214,32 @@ h2 {
         pointer-events: none; 
     }
 }
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+
+@media (max-width: 64rem) {
+  .clearfix {
+    grid-template-columns: 1fr;
+  }
+  .navbar {
+    flex-direction: column;
+    gap: 0.625rem;
+  }
+  .logo {
+    text-align: center;
+  }
+}
+
+@media (max-width: 48rem) {
+  .clearfix {
+    grid-template-columns: 1fr;
+  }
+  .navbar {
+    flex-direction: column;
+    gap: 0.625rem;
+  }
+  .logo {
+    text-align: center;
+  }
+}
