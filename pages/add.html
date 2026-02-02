@@ -4,14 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Añadir | KARIO Media</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/add.css">
 </head>
 <body>
+    <header class="header-add">
+        <nav class="navigation-bar">
+            <ul class="navigation-links">              
+                <li class="logo-container">
+                    <a href="./dashboard.html"><img class="Kario-media-logo-dashboard" src="../assets/imgs/kario-sin-kairo.svg"></a>
+                </li>
+                
+                <li><a href="./bugfix.html"><img src="../assets/imgs/Icon-material-bug-report.svg" alt="bug-report"><span>Reportar</span></a></li>
+                <li><a href="./help.html"><img src="../assets/imgs/icons8-help-48.png" alt="help"><span>Ayuda</span></a></li>
+            </ul>
+        </nav>
+
+        <div class="header-icons">
+            <img src="../assets/imgs/Icon-ionic-ios-settings.svg" alt="settings">
+            <img src="../assets/imgs/Icon-material-notifications-active.svg" alt="notifications">
+            <a href="./profile.html"><img src="../assets/imgs/pp.png"></a>
+        </div>
+    </header>
     <main>
         <div class="add-form">
-            <img src="a">
+            <img src="../assets/imgs/kario-sin-kairo.svg" class="form-imagen">
             <div>
-                <p>Nuevo Indicador</p>
-                <p>Completa los campos para añadir un nuevo indicador a tu panel</p>
+                <p class="form-title">Nuevo Indicador</p>
+                <p class="form-title">Completa los campos para añadir un nuevo indicador a tu panel</p>
             </div>
             <form>
                 <div>
@@ -49,10 +69,19 @@
                     <label for="area" class="form-label">Área</label>
                     <input type="text" id="area" name="area" class="form-input" placeholder="Ingrese el Área" required/>
                 </div>
-
             </form>
+
+            <div class="acciones">
+                <a href="./add.html"><button class="btn-editar">Añadir Elementos</button></a>
+                <a href="./dashboard.html"><button class="btn-cancelar">Cancelar</button></a>
+            </div>
         </div>
     </main>
+
+    <footer class="site-footer">
+      <div class="footer-p"><p>KARIO Media © 2026 | Contacto: <a href="mailto:info@kariomedia.com">info@kariomedia.com</a> | Desarrollado con 🤍 por: <a href="https://github.com/Dana-villa" target="_blank">Dana Villamizar</a>, <a href="https://github.com/karinamendez17" target="_blank">Karina Mendez</a> y <a href="https://github.com/Shiroses" target="_blank">Santiago Domínguez</a></p></div>
+      <div class="footer-legal"><a href="#" class="footer-link">Términos y Condiciones</a> | <a href="#" class="footer-link">Política de Privacidad</a> | <a href="#" class="footer-link">Aviso Legal</a></div>
+    </footer>
     
 </body>
 </html>

@@ -14,7 +14,6 @@ body{
     background: url("../assets/imgs/pexels-pixabay-159400.png") black no-repeat;
     background-size: cover;
     background-position: 50%;
-
 }
 h1 {
     font-weight: normal;
@@ -61,7 +60,7 @@ h2 {
 
     opacity: 0;
     visibility: hidden;
-    animation: fadeInOut 4s ease-in-out forwards;
+    animation: fadeInContainer 1s ease-in-out forwards;
     animation-delay: 2s;
 
     height: auto;
@@ -129,7 +128,6 @@ h2 {
     opacity: 0;
     visibility: hidden;
     animation: fadeInOut 4s ease-in-out forwards;
-    animation-delay: 5.3s;
 
     height: auto;
     width: 35vmax;
@@ -161,8 +159,8 @@ h2 {
 
     z-index: -1;
 
-    animation: fadeInOut 4s ease-in-out forwards;
-    animation-delay: 9.3s; 
+    animation: fadeInOut 2s ease-in-out forwards;
+    animation-delay: 4s; 
 }
 
 @media (max-width:1500px) {
@@ -201,6 +199,7 @@ h2 {
     20% { opacity: 1; visibility: visible;}
     80% { opacity: 1;}
     100% { opacity: 0; visibility: hidden;}
+
 }
 @keyframes fadeOutContainer {
     to { 
@@ -208,4 +207,8 @@ h2 {
         visibility: hidden; 
         pointer-events: none; 
     }
+}
+@keyframes fadeInContainer {
+    0% { opacity: 0; visibility: hidden;}
+    100% { opacity: 1; visibility: visible;}
 }
