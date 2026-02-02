@@ -8,120 +8,175 @@
     --border: #e0e0e0;
     --text-dark: #333;
     --text-muted: #777;
-  }
-  
-  /* Reset */
-  * {
-    box-sizing: border-box;
+}
+
+/* Reset */
+* {
     margin: 0;
     padding: 0;
-    font-family: 'Inter', system-ui, sans-serif;
-  }
-  
-  body {
-    background: #efefef;
-    min-height: 100vh;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header-perfil {
+    width: 100%;
+    height: 6rem;
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 20px;
-  }
-  
-  /* =========================
+    padding: 0 2rem 0rem 2rem;
+    position: relative;
+    border-bottom: #a7a7a7 2px solid;
+}
+
+.navigation-bar {
+    grid-column: 1;
+    width: 85%;
+}
+
+.navigation-links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5rem;
+    list-style: none;
+    margin: 0;
+
+    li {
+        font-size: 1rem;
+
+        a {
+            color: #1d1d1d;
+            font-weight: 500;
+            text-decoration: none;
+        }
+
+        span {
+            margin-left: 0.5rem;
+        }
+
+        img {
+            width: 18px;
+            height: auto;
+        }
+
+        .logo-container {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 48px;
+            height: auto;
+        }
+    }
+}
+
+.header-icons-dashboard {
+    margin-left: auto;
+    display: flex;
+    gap: 1.5rem;
+    z-index: 10;
+
+    img {
+        cursor: pointer;
+    }
+}
+
+/* =========================
      Tarjeta principal
   ========================= */
-  .report-card {
+.report-card {
+    margin: 2rem auto;
     width: 420px;
     background: #fff;
     border-radius: 16px;
     padding: 20px;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
-  }
-  
-  /* =========================
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* =========================
      Header
   ========================= */
-  .card-header {
+.card-header {
     display: flex;
     gap: 12px;
     margin-bottom: 16px;
-  }
-  
-  .bug-icon {
+}
+
+.bug-icon {
     font-size: 28px;
     color: var(--primary);
-  }
-  
-  .card-header h1 {
+}
+
+.card-header h1 {
     font-size: 20px;
     font-weight: 700;
-  }
-  
-  .card-header p {
+}
+
+.card-header p {
     font-size: 13px;
     color: var(--text-muted);
-  }
-  
-  /* =========================
+}
+
+/* =========================
      Formulario
   ========================= */
-  .report-form {
+.report-form {
     display: flex;
     flex-direction: column;
     gap: 14px;
-  }
-  
-  .form-group label {
+}
+
+.form-group label {
     font-size: 13px;
     font-weight: 600;
     color: var(--text-dark);
     margin-bottom: 6px;
     display: block;
-  }
-  
-  input,
-  select,
-  textarea {
+}
+
+input,
+select,
+textarea {
     width: 100%;
     padding: 10px 12px;
     border-radius: 8px;
     border: 1px solid var(--border);
     background: var(--bg-light);
     font-size: 14px;
-  }
-  
-  textarea {
+}
+
+textarea {
     resize: none;
     height: 90px;
-  }
-  
-  /* =========================
+}
+
+/* =========================
      Prioridad
   ========================= */
-  .priority-options {
+.priority-options {
     display: flex;
     gap: 10px;
-  }
-  
-  .priority {
+}
+
+.priority {
     padding: 6px 14px;
     border-radius: 20px;
     border: 1px solid var(--border);
     background: #fff;
     font-size: 13px;
     cursor: pointer;
-  }
-  
-  .priority.active {
+}
+
+.priority.active {
     background: var(--primary);
     color: #fff;
     border-color: var(--primary);
-  }
-  
-  /* =========================
+}
+
+/* =========================
      Upload
   ========================= */
-  .upload-box {
+.upload-box {
     border: 2px dashed #d0d0d0;
     border-radius: 10px;
     padding: 20px;
@@ -129,40 +184,47 @@
     color: var(--text-muted);
     font-size: 13px;
     cursor: pointer;
-  }
-  
-  .upload-box img{
+}
+
+.upload-box img {
     width: 30px;
     height: 30px;
-  }
-  
-  /* =========================
+}
+
+/* =========================
      Acciones
   ========================= */
-  .card-actions {
+.card-actions {
     display: flex;
     justify-content: space-between;
     margin-top: 18px;
-  }
-  
-  .btn {
+}
+
+.btn {
     padding: 10px 20px;
     border-radius: 22px;
     border: none;
     font-size: 14px;
     cursor: pointer;
-  }
-  
-  .btn.cancel {
+}
+
+.btn.cancel {
     background: #eaeaea;
     color: #555;
-  }
-  
-  .btn.submit {
+}
+
+.btn.submit {
     background: var(--primary);
     color: #fff;
-  }
-  
-  .btn.submit:hover {
+}
+
+.btn.submit:hover {
     background: var(--primary-dark);
-  }
+}
+
+@media (max-width: 600px) {
+    .report-card{
+        width: 100%;
+    }
+    
+}
