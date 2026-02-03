@@ -226,5 +226,25 @@ textarea {
     .report-card{
         width: 100%;
     }
-    
+    .navigation-links {
+        display: block;
+    }
+
+    .navigation-links li span {
+        display: none;
+    }
+
+    .navigation-bar {
+        display: grid;
+        grid-template-columns: 2rem auto;
+    }
+
+    .acciones {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .report-icon-header, .help-icon-header {
+        display: none;
+    }
+
 }

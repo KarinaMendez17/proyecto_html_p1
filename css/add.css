@@ -181,7 +181,7 @@ textarea:focus {
     }
 
     .navigation-links {
-        grid-template-columns: auto 1fr;
+        display: block;
     }
 
     .navigation-links li span {
@@ -197,4 +197,8 @@ textarea:focus {
         justify-content: center;
         flex-wrap: wrap;
     }
+    .report-icon-header, .help-icon-header {
+        display: none;
+    }
+    
 }

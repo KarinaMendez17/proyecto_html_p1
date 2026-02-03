@@ -188,7 +188,7 @@
 
 @media (max-width: 37.5rem) {
     .navigation-links {
-        grid-template-columns: auto 1fr;
+        display: block;
     }
 
     .navigation-links li span {
@@ -223,5 +223,8 @@
     .acciones-perfil {
         justify-content: center;
         flex-wrap: wrap;
+    }
+    .report-icon-header, .help-icon-header {
+        display: none;
     }
 }

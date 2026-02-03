@@ -59,10 +59,17 @@ body {
     gap: 1.5rem;
 }
 
-.header-icons-dashboard img {
-    width: 22px;
-    cursor: pointer;
+.header-icons-dashboard {
+    margin-left: auto;
+    display: flex;
+    gap: 1.5rem;
+    z-index: 10;
+
+    img {
+        cursor: pointer;
+    }
 }
+
 
 .help-container {
     display: flex;
@@ -247,5 +254,25 @@ body {
     .help-footer {
         flex-direction: column;
         align-items: stretch;
+    }
+    .navigation-links {
+        display: block;
+    }
+
+    .navigation-links li span {
+        display: none;
+    }
+
+    .navigation-bar {
+        display: grid;
+        grid-template-columns: 2rem auto;
+    }
+
+    .acciones {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .report-icon-header, .help-icon-header {
+        display: none;
     }
 }
