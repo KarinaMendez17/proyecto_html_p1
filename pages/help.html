@@ -1,11 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Centro de Ayuda | KARIO Media</title>
+    <link rel="stylesheet" href="../css/help.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    
+    <header class="header-add">
+        <nav class="navigation-bar">
+            <ul class="navigation-links">              
+                <li class="logo-container">
+                    <a href="./dashboard.html"><img class="Kario-media-logo-dashboard" src="../assets/imgs/kario-sin-kairo.svg"></a>
+                </li>
+                
+                <li><a href="./bugfix.html"><img src="../assets/imgs/Icon-material-bug-report.svg" alt="bug-report"><span>Reportar</span></a></li>
+                <li><a href="./help.html"><img src="../assets/imgs/icons8-help-48.png" alt="help"><span>Ayuda</span></a></li>
+            </ul>
+        </nav>
+
+        <div class="header-icons-dashboard">
+            <img src="../assets/imgs/Icon-ionic-ios-settings.svg" alt="settings">
+            <img src="../assets/imgs/Icon-material-notifications-active.svg" alt="notifications">
+            <a href="./profile.html"><img src="../assets/imgs/pp.png"></a>
+        </div>
+    </header>
+
+    <div class="help-container">
+        <div class="help-cmodal">
+            
+            <header class="help-header">
+                <div class="icon-circle">
+                    <span class="question-mark">?</span>
+                </div>
+                <div class="help-title">
+                    <h1>Centro de Ayuda</h1>
+                    <p>Encuentra respuestas a tus preguntas o contáctanos.</p>
+                </div>
+            </header>
+
+            <div class="help-content">
+                
+                <aside class="topics">
+                    <h2>Temas Clave</h2>
+                    <nav class="topics-list">
+                        <a href="#" class="topic-item">
+                            <img src="../assets/imgs/icons8-help-48.png" alt="Primeros Pasos" class="topic-icon">
+                            <span>Primeros Pasos</span>
+                        </a>
+                        
+                        <a href="#" class="topic-item">
+                            <img src="../assets/imgs/icons8-help-48.png" alt="Primeros Pasos" class="topic-icon">
+                            <span>Gestión de Imágenes</span>
+                        </a>
+                        
+                        <a href="#" class="topic-item active">
+                            <img src="../assets/imgs/icons8-help-48.png" alt="Primeros Pasos" class="topic-icon">
+                            <span>Gestión de Indicadores</span>
+                        </a>
+                        
+                        <a href="#" class="topic-item">
+                            <img src="../assets/imgs/icons8-help-48.png" alt="Primeros Pasos" class="topic-icon">
+                            <span>Reportes y Análisis</span>
+                        </a>
+                        
+                        <a href="#" class="topic-item">
+                            <img src="../assets/imgs/icons8-help-48.png" alt="Primeros Pasos" class="topic-icon">
+                            <span>Configuración y Cuenta</span>
+                        </a>
+                        
+                        <a href="#" class="topic-item">
+                            <img src="../assets/imgs/icons8-help-48.png" alt="Primeros Pasos" class="topic-icon">
+                            <span>Solución de Problemas</span>
+                        </a>
+                    </nav>
+                </aside>
+
+                <main class="questions-main">
+                    <h2>Preguntas Frecuentes</h2>
+                    <div class="questions-list">
+                        <a href="#" class="question-item">
+                            ¿Cómo añado un nuevo indicador?
+                        </a>
+                        <a href="#" class="question-item">
+                            ¿Qué tipo de nuevo indicador puedo elegir?
+                        </a>
+                        <a href="#" class="question-item">
+                            ¿Qué significa el nivel de cumplimiento?
+                        </a>
+                        <a href="#" class="question-item">
+                            ¿Sólo el administrador puede ver los informes?
+                        </a>
+                    </div>
+                </main>
+                
+            </div>
+
+            <footer class="help-footer">
+                <div class="search-container">
+                    <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                    <input type="text" placeholder="Busca tu pregunta..." class="search-input">
+                </div>
+                <button class="close-button"><a href="./dashboard.html">Cerrar</a></button>
+            </footer>
+        </div>
+    </div>
+    <footer class="site-footer">
+        <div class="footer-p">
+            <p>KARIO Media © 2026 | Contacto: <a href="mailto:info@kariomedia.com">info@kariomedia.com</a> |
+                Desarrollado con 🤍 por: <a href="https://github.com/Dana-villa" target="_blank">Dana Villamizar</a>, <a
+                    href="https://github.com/karinamendez17" target="_blank">Karina Mendez</a> y <a
+                    href="https://github.com/Shiroses" target="_blank">Santiago Domínguez</a></p>
+        </div>
+        <div class="footer-legal"><a href="#" class="footer-link">Términos y Condiciones</a> | <a href="#"
+                class="footer-link">Política de Privacidad</a> | <a href="#" class="footer-link">Aviso Legal</a></div>
+    </footer>
 </body>
 </html>
