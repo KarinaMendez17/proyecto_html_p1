@@ -1,3 +1,11 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main {
+    flex: 1;
+}
 .header-dashboard {
     width: 100%;
     height: 6rem;
@@ -95,6 +103,9 @@
 }
 
 @media (max-width: 600px) {
+    body {
+        height: auto;
+    }
 
     .header-dashboard {
         justify-content: center;
@@ -133,6 +144,7 @@
 
     .site-footer {
         text-align: center;
+        position: relative;
     }
 
     .footer-p,

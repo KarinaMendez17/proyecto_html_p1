@@ -8,6 +8,9 @@
 body {
     background-color: #f4f4f4;
     color: #1d1d1d;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .header-add {
@@ -26,6 +29,7 @@ body {
 
 .navigation-links {
     display: flex;
+    justify-content: flex-start;
     align-items: center;
     gap: 4rem;
     list-style: none;
