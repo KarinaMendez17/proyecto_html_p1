@@ -28,44 +28,38 @@
     gap: 5rem;
     list-style: none;
     margin: 0;
-
-    li {
-        font-size: 1rem;
-
-        a {
-            color: #1d1d1d;
-            font-weight: 500;
-            text-decoration: none;
-        }
-
-        span {
-            margin-left: 0.5rem;
-        }
-
-        img {
-            width: 18px;
-            height: auto;
-        }
-
-        .logo-container {
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            width: 48px;
-            height: auto;
-        }
-    }
+}
+.navigation-links li {
+    font-size: 1rem;
+}
+.navigation-links li a {
+    color:#1d1d1d;
+    font-weight: 500;
+    text-decoration: none;
+}
+.navigation-links li span {
+    margin-left: 0.5rem;
+}
+.navigation-links li img {
+    width: 18px;
+    height: auto;
 }
 
-.header-icons-dashboard {
+.logo-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 48px;
+    height: auto;
+}
+.header-icons {
     margin-left: auto;
     display: flex;
     gap: 1.5rem;
     z-index: 10;
-
-    img {
-        cursor: pointer;
-    }
+}
+.header-icons img {
+    cursor: pointer;
 }
 
 .perfil {
