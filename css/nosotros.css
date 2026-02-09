@@ -1,0 +1,165 @@
+/* Contenedor Principal */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #1d1d1d;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header-add {
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+    border-bottom: 2px solid #a7a7a7;
+    background-color: #ffffff;
+}
+
+.navigation-bar {
+    width: 85%;
+}
+
+.navigation-links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 4rem;
+    list-style: none;
+}
+
+.navigation-links li a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: #1d1d1d;
+    font-weight: 500;
+}
+
+.navigation-links img {
+    width: 18px;
+}
+
+.logo-container img {
+    width: 48px;
+}
+
+.help-footer button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header-icons-dashboard {
+    margin-left: auto;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.header-icons-dashboard {
+    margin-left: auto;
+    display: flex;
+    gap: 1.5rem;
+    z-index: 10;
+
+    img {
+        cursor: pointer;
+    }
+}
+
+.Nosotros-icon {
+    width: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5px;
+}
+
+.team-container {
+    padding: 40px 5%;
+    text-align: center;
+}
+
+.team-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #ff721b;
+}
+
+.team-container p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #5a5a5a;
+}
+
+
+/* Grid Responsivo: 1 columna en móvil, 4 en desktop */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+    gap: 25px;
+    margin-top: 40px;
+    justify-items: center;
+}
+
+/* Tarjeta */
+.team-card {
+    position: relative; /* Necesario para el texto absoluto */
+    width: 100%;
+    max-width: 300px;
+    height: 400px;
+    border-radius: 15px;
+    overflow: hidden; /* Corta la imagen en las esquinas */
+    box-shadow: 0 10px 20px rgba(204, 28, 28, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Imagen que cubre toda la tarjeta */
+.team-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Evita que la foto se deforme */
+}
+
+
+
+/* Capa de información sobrepuesta */
+.team-info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(transparent, rgba(255, 114, 27, 80)); /* Gradiente para contraste */
+    color: white;
+    text-align: left;
+}
+
+.team-info h3 {
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.team-info p {
+    margin: 5px 0 0;
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+/* Media Query para Escritorio */
+@media (min-width: 768px) {
+    .team-grid {
+        grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+    }
+}
